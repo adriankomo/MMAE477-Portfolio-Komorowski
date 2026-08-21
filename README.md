@@ -1,4 +1,4 @@
-# MMAE 477 Engineering Portfolio: [Your Name]
+# MMAE 477 Engineering Portfolio: Adrian
 
 **Integrated Drone Systems Engineering I · Illinois Tech · Fall 2026**
 
