@@ -1,14 +1,14 @@
 Component,Onboard or Ground,Qty,Unit mass (g),Total mass (g),Part found (name + link),Price ($),Notes
 Frame,Onboard,1,100,100,n/a - assumed,n/a,"FIXED VALUE - designed later in the course, do not change"
 Wiring / Connectors / Power Distribution,Onboard,1,20,20,n/a - assumed,n/a,"FIXED VALUE - given allowance, do not change"
-Motors,Onboard,4,,,,,must cite a real thrust source - one of the README's 3 candidates (researched) or your own documented motor
-ESC (4-in-1),Onboard,1,,,,,
-Propellers (+ spares),Onboard,4,,,,,buy spares; only the 4 flying count toward mass
-Battery (LiPo),Onboard,1,,,,,
-Flight Controller,Onboard,1,,,,,
-RC Receiver,Onboard,1,,,,,receiver only - matched to your transmitter
-RC Transmitter,Ground - excluded,1,,,,,handheld controller; does not count toward vehicle mass
-Companion Computer (Track A only),Onboard,1,,,,,leave blank if Track B
-Camera (Track A only),Onboard,1,,,,,leave blank if Track B
-GPS Module (Track A only),Onboard,1,,,,,leave blank if Track B
-Total (Onboard only),,,,,,,sum of Total mass for all Onboard rows - this is your W
+Motors,iFlight XING2 2207 Motor - 1855KV/2755KV,4,"31.6g (with wire)",126.4,"https://www.getfpv.com/iflight-xing2-2207-motor-1855kv-2755kv.html","4(31.49)=$125.96","must cite a real thrust source - one of the README's 3 candidates (researched) or your own documented motor"
+ESC (4-in-1),Onboard,1,10g,,https://www.racedayquads.com/products/fettec-sfoc-50a-2-8s-4-in-1-esc?keyword=4-in-1%20Brushless%20ESC,$83.49,
+Propellers (+ spares),Onboard,4,"3.7gx4",14.8,https://pyrodrone.com/products/ethix-s5-light-grey-2cw-2ccw-poly-carbonate,"$4.99x4","buy spares; only the 4 flying count toward mass"
+Battery (LiPo),Onboard,1,179g,,https://www.getfpv.com/xilo-1500mah-4s-100c-lipo-battery.html,$26.99,
+Flight Controller,Onboard,1,5g,,https://pyrodrone.com/products/iflight-blitz-mini-f7-flight-controller-stm32f722-mpu6000-20x20mm,$63.99,
+RC Receiver,Onboard,1,1.8g,,https://pyrodrone.com/products/iflight-expresslrs-elrs-500mw-receiver-2-4ghz-choose-antenna?variant=41086995595307,$29.99,"receiver only - matched to your transmitter"
+RC Transmitter,Ground - excluded,1,532.5 g,532.5 g,https://radiomasterrc.com/collections/boxer-radio/products/boxer-radio-transparent-version?utm_source=chatgpt.com,$153.99,"handheld controller; does not count toward vehicle mass"
+Companion Computer (Track A only),Onboard,1,80g,,https://www.raspberrypi.com/products/raspberry-pi-5/,$305.00,"leave blank if Track B"
+Camera (Track A only),Onboard,1,1.7g,,https://pyrodrone.com/products/runcam-atom-w-130-800tvl-lightweight-analog-fpv-camera,$25.99,"leave blank if Track B"
+GPS Module (Track A only),Onboard,1,2.16g,,https://pyrodrone.com/products/newbeedrone-m10q-micro-gps-module-with-compass,$19.99,"leave blank if Track B"
+Total (Onboard only),,,,"446.06 g",, "$701.36","sum of Total mass for all Onboard rows - this is your W"
