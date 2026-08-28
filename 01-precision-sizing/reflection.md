@@ -16,6 +16,7 @@ I tightened the mass estimates by replacing rough ranges with actual component w
 - Does this clear the 35% target? (yes / no, and if no, what would you
   change): Yes. Margin = 10.25%, which is below the 35% target, leaving substantial thrust required for hover.
 
+Source link: https://www.thingbits.in/products/iflight-xing2-2207-unibell-fpv-brushless-motor 
 
 ## Anything still hard to pin down
 
