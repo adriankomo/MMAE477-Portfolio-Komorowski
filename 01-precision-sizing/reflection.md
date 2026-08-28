@@ -2,9 +2,7 @@
 
 ## What changed since your first pass (00)
 
-*(A few sentences: what did you tighten, fix, or catch in your original
-sizing table? Real errors count as useful findings here, not embarrassing
-ones.)*
+I tightened the mass estimates by replacing rough ranges with actual component weights from verified product listings. I corrected the onboard mass by removing the RC transmitter, which should never be counted toward vehicle weight. I also switched to one of the officially provided motors and matched its thrust test to the correct battery voltage, ensuring the sizing aligns with the 4S system. Overall, this pass replaced assumptions with sourced values and eliminated early‑stage placeholders.
 
 
 ## Your numbers
@@ -21,5 +19,4 @@ ones.)*
 
 ## Anything still hard to pin down
 
-*(What's still an assumption or a guess in your table, and why? It's fine
-for this to be a real, unresolved list — that's the point of flagging it.)*
+The published thrust test does not use the same propeller as my build. My Ethix S5 prop is a 5×4 three‑blade, while the closest available test uses a 5.1×4.0 two‑blade. Because the diameter and pitch are similar, I used that test as the best available proxy, but actual thrust may differ due to blade geometry and loading. This remains an unavoidable assumption until I can test the exact prop‑motor combination.
