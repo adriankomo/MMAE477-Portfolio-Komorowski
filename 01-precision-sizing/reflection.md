@@ -9,14 +9,14 @@ ones.)*
 
 ## Your numbers
 
-- Total onboard vehicle mass, W (g):
-- Battery cell count (S):
-- Hover thrust needed per motor, T = W / 4 (g):
-- Motor you're checking against (one of the README's 3 candidates, or your own from `00`):
-- That motor's max thrust at a matching cell count (g), and where you found it (name + link):
-- Margin = T / max thrust (%):
+- Total onboard vehicle mass, W (g): 541.86 g
+- Battery cell count (S): 4S
+- Hover thrust needed per motor, T = W / 4 (g): 541.86 / 4 = 135.47 g
+- Motor you're checking against (one of the README's 3 candidates, or your own from `00`): iFlight XING2 2207 2755KV
+- That motor's max thrust at a matching cell count (g), and where you found it (name + link): 1321 g at 16.0 V using 5.1 x 4.0 propeller. Source: Thingbits iFlight XING2 2207 Prop Test Report
+- Margin = T / max thrust (%): (135.47 / 1321) * 100 = 10.25%
 - Does this clear the 35% target? (yes / no, and if no, what would you
-  change):
+  change): Yes. Margin = 10.25%, which is below the 35% target, leaving substantial thrust required for hover.
 
 
 ## Anything still hard to pin down
