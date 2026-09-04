@@ -10,5 +10,5 @@ RC Receiver,Onboard,1,1.8,1.8,https://pyrodrone.com/products/iflight-expresslrs-
 RC Transmitter,Ground - excluded,1,532.5,532.5,https://radiomasterrc.com/collections/boxer-radio/products/boxer-radio-transparent-version?utm_source=chatgpt.com,153.99,"Handheld controller; does not count toward vehicle mass"
 Companion Computer (Track A only),Onboard,1,80,80,https://www.raspberrypi.com/products/raspberry-pi-5/,305.00,"Track A only"
 Camera (Track A only),Onboard,1,1.7,1.7,https://pyrodrone.com/products/runcam-atom-w-130-800tvl-lightweight-analog-fpv-camera,25.99,"Track A only"
-GPS Module (Track A only),Onboard,1,2.16,2.16,https://pyrodrone.com/products/newbeedrone-m10q-micro-gps-module-with-compass,$19.99,"Track A only"
-Total (Onboard only),,,,,540.86 g,,$701.36,"Sum of Total mass for all Onboard rows - Track A"
+GPS Module (Track A only),Onboard,1,2.16,2.16,https://pyrodrone.com/products/newbeedrone-m10q-micro-gps-module-with-compass,19.99,"Track A only"
+Total (Onboard only),,,540.86,540.86,,701.36,"Sum of Total mass for all Onboard rows - Track A"
