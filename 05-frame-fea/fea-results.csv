@@ -1,8 +1,8 @@
 run,geometry,load_case,mesh_refinement,num_elements,load_per_motor_gf,load_per_motor_N,max_disp_mm,tip_disp_probe_mm,stress_type,max_stress_MPa,max_stress_gf_mm2,max_stress_location,arm_mid_stress_MPa,arm_mid_stress_gf_mm2
-fillet_1,fillet,hover,1 (default),,,,,,,,,,,
-fillet_2,fillet,hover,2,,,,,,,,,,,
-fillet_3,fillet,hover,3 (finest),,,,,,,,,,,
-sharp_1,sharp,hover,1 (default),,,,,,,,,,,
-sharp_2,sharp,hover,2,,,,,,,,,,,
-sharp_3,sharp,hover,3 (finest),,,,,,,,,,,
-fullthrottle,fillet,full_throttle,3 (finest),,,,,,,,,,,
+fillet_1,fillet,hover,1 (default),8148,135.465,1.328,0.1003,0.0758,von Mises,4.644,473.549,inside arm-root fillet / arm-to-body transition,1.293,131.847
+fillet_2,fillet,hover,2,8148,135.465,1.328,0.1003,,von Mises,4.644,473.549,inside arm-root fillet / arm-to-body transition,1.293,131.847
+fillet_3,fillet,hover,3 (finest),9880,135.465,1.328,0.1007,,von Mises,4.943,504.038,inside arm-root fillet / arm-to-body transition,1.275,130.012
+sharp_1,sharp,hover,1 (default),7632,135.465,1.328,0.1030,,von Mises,5.374,547.987,sharp inside arm-root corner where arm meets body,,
+sharp_2,sharp,hover,2,7382,135.465,1.328,0.1029,,von Mises,4.803,489.762,sharp inside arm-root corner where arm meets body,,
+sharp_3,sharp,hover,3 (finest),9706,135.465,1.328,0.1032,,von Mises,5.919,603.560,sharp inside arm-root corner where arm meets body,,
+fullthrottle,fillet,full_throttle,3 (finest),9880,1321,12.955,0.982,,von Mises,48.22,4916.993,inside arm-root fillet / arm-to-body transition,,
