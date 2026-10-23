@@ -1,27 +1,27 @@
 step,quantity,value,units,source / notes
-1,vehicle weight W,,g,onboard total from sizing-table.csv
-1,battery cell count,,S,
-1,battery nominal voltage V,,V,3.7 V per cell
-2,hover thrust per motor T_hover,,g,W / 4
-3,motor (name and KV),,,
-3,propeller,,,
-3,thrust table source,,,name + link
-3,hover throttle,,%,from thrust table; interpolate if needed
-3,hover current (battery),,A,per motor
-3,hover rpm,,rpm,
-3,full-throttle thrust T_max,,g,per motor
-3,full-throttle current I_max,,A,per motor
-3,full-throttle rpm,,rpm,
-3,hover margin T_hover / T_max,,%,target <= 35%
-4,no-load speed KV x V,,rpm,
-4,full-throttle rpm / no-load speed,,-,should be below 1
-4,torque constant Kt,,N m/A,9.55 / KV
-4,hover motor current I_battery / throttle,,A,
-4,hover torque,,N m,Kt x motor current
-4,hover torque,,gf mm,1 N m = 101972 gf mm
-4,Q/T at hover,,mm,Lab 07 assumed 15 mm
-5,ESC rating per motor,,A,target >= 1.2 x I_max
-5,battery capacity,,mAh,
-5,battery C-rating,,C,
-5,battery maximum current,,A,target >= 4 x I_max
-6,estimated hover time,,min,aim for >= 5 min
+1,vehicle weight W,541.86,g,onboard total from sizing-table.csv
+1,battery cell count,4,S,XILO 1500 mAh 4S battery
+1,battery nominal voltage V,14.8,V,3.7 V per cell
+2,hover thrust per motor T_hover,135.465,g,W / 4
+3,motor (name and KV),iFlight XING2 2207 2755KV,,existing motor choice
+3,propeller,Ethix S5 5x4x3,,bench data approximated using closest tested HQProp Durable 5x4.3x3 V2S
+3,thrust table source,https://www.youtube.com/watch?v=JW4OAYa6rsQ,,independent test; closest tested prop HQProp Durable 5x4.3x3 V2S
+3,hover throttle,21.18,%,slight linear extrapolation below 25% test point
+3,hover current (battery),2.084,A,slight linear extrapolation from 25% point: 159.9 g at 2.46 A
+3,hover rpm,9465,rpm,estimated from measured 75% thrust/RPM using T proportional to RPM^2
+3,full-throttle thrust T_max,1418.7,g,bench test at 100% throttle
+3,full-throttle current I_max,45.16,A,bench test at 100% throttle
+3,full-throttle rpm,30290,rpm,bench test at 100% throttle
+3,hover margin T_hover / T_max,9.55,%,passes <= 35%
+4,no-load speed KV x V,40774,rpm,2755 x 14.8
+4,full-throttle rpm / no-load speed,0.743,-,30290 / 40774; below 1 as expected
+4,torque constant Kt,0.003466,N m/A,9.55 / 2755
+4,hover motor current I_battery / throttle,9.84,A,2.084 / 0.2118
+4,hover torque,0.03411,N m,Kt x motor current
+4,hover torque,3478.2,gf mm,0.03411 N m x 101972
+4,Q/T at hover,25.68,mm,3478.2 / 135.465; Lab 07 assumed 15 mm
+5,ESC rating per motor,50,A,FETtec 50 A per channel
+5,battery capacity,1500,mAh,XILO 4S battery
+5,battery C-rating,100,C,XILO battery
+5,battery maximum current,150,A,1.5 Ah x 100 C; required >= 180.64 A
+6,estimated hover time,8.64,min,60 x 0.8 x 1.5 / (4 x 2.084)
