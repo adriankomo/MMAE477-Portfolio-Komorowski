@@ -4,8 +4,7 @@
 
 ## Part A — Tip-speed dimensional analysis
 
-### A1. Fundamental dimensions and thrust coefficient
-
+**A1.** Give the fundamental dimensions of thrust, density, tip speed, and diameter. Solve for the powers a, b, and c, and define the dimensionless thrust coefficient C_T,U.
 Assume
 
 `T = C_T,U * rho^a * U_tip^b * D^c`
@@ -39,8 +38,7 @@ Therefore,
 
 where `C_T,U` is a dimensionless thrust coefficient based on blade-tip speed.
 
-### A2. Relationship between C_T,U and C_T,Omega
-
+**A2.** Show the conversion between C_T,U and C_T,Omega. Why is it only a change of normalization?
 Since
 
 `U_tip = Omega*D/2`
@@ -65,8 +63,7 @@ or
 
 This is only a change of normalization because both equations describe the same physical thrust. The numerical value of the coefficient changes because a different characteristic velocity is used.
 
-### A3. Diameter scaling
-
+**A3.** At constant thrust coefficient, how does thrust scale with diameter when (i) angular speed is fixed and (ii) tip speed is fixed? Explain.
 At constant thrust coefficient and fixed angular speed:
 
 `T proportional to Omega^2 * D^4`
@@ -89,7 +86,7 @@ The difference occurs because at fixed Omega, increasing diameter also increases
 
 ## Part B — Actuator-disk assumptions and mass conservation
 
-### B1. Streamtube and assumptions
+**B1.** Briefly describe the streamtube control volume, the assumptions of the model, and why a fixed-area upstream cylinder is inappropriate.
 
 The streamtube control volume follows the air that passes through the rotor disk. Its sides follow streamlines, so ideally no mass crosses the sides of the streamtube.
 
@@ -97,7 +94,7 @@ The actuator-disk model assumes steady, incompressible, axial and uniform flow a
 
 The upstream streamtube cannot be treated as a constant-area cylinder. In hover, the velocity approaches zero far upstream while the velocity through the rotor disk is finite. To maintain the same mass flow, the streamtube area must change as the air accelerates toward the rotor.
 
-### B2. Mass flow and pressure jump
+**B2.** Obtain the mass-flow rate at the disk, define the pressure jump, and relate pressure jump to thrust.
 
 At the disk,
 
@@ -119,7 +116,7 @@ Therefore,
 
 ## Part C — Momentum conservation
 
-### C1. Axial momentum balance
+**C1.** Show the axial momentum balance (downward positive) and substitute the mass flow rate.
 
 Taking downward as positive for the air, the rotor exerts a downward force T on the airflow.
 
@@ -143,7 +140,7 @@ gives
 
 `T = rho*A*vi*vw`
 
-### C2. Why another equation is needed
+**C2.** Why is another equation needed to determine both induced velocity and far-wake velocity?
 
 Mass and momentum conservation give
 
@@ -155,7 +152,7 @@ but both `vi` and `vw` are unknown. Therefore, one equation is not sufficient to
 
 ## Part D — Bernoulli and the pressure jump
 
-### D1. Bernoulli above and below the disk
+**D1.** Apply Bernoulli separately above and below the disk. Derive the pressures p'^− and p'^+.
 
 Above the disk, apply Bernoulli from far upstream to just above the rotor:
 
@@ -173,7 +170,7 @@ Therefore,
 
 `p'^+ = (1/2)*rho*(vw^2 - vi^2)`
 
-### D2. Pressure jump, far-wake velocity, and thrust
+**D2.** Obtain the pressure jump and combine it with the momentum balance to derive the far-wake speed and actuator-disk thrust equation.
 
 The pressure jump is
 
@@ -219,7 +216,7 @@ so the actuator-disk thrust equation is
 
 `T = 2*rho*A*vi^2`
 
-### D3. Bernoulli across the disk and gravity
+**D3.** Why cannot Bernoulli be applied directly across the disk? Why can the gravitational term be removed from the pressure-perturbation form without neglecting the quadcopter's weight?
 
 Bernoulli cannot be applied unchanged directly across the actuator disk because the rotor adds mechanical energy to the air. The pressure therefore has a discontinuous increase across the disk.
 
@@ -229,7 +226,7 @@ The gravitational term can be removed from the pressure-perturbation form becaus
 
 ## Part E — Power and diameter
 
-### E1. Induced velocity and ideal induced power
+**E1.** Derive induced velocity vi from a specified thrust and then derive ideal induced power Pi. Check the units.
 
 Starting with
 
@@ -265,7 +262,8 @@ The units are
 
 so the result correctly has units of power.
 
-### E2. Total ideal hover power for N rotors
+**E2.** Obtain total ideal hover power for N rotors supporting mass M. How does it depend on diameter at fixed vehicle weight and rotor count?
+
 
 For N identical rotors,
 
@@ -293,7 +291,7 @@ For fixed vehicle mass, air density, and number of rotors:
 
 Therefore, increasing rotor diameter decreases ideal induced hover power.
 
-### E3. Why ideal induced power is not enough
+**E3.** Explain why ideal induced power alone is insufficient for selecting a commercial propeller.
 
 Ideal induced power alone cannot determine the best commercial propeller because the actuator-disk model ignores real blade geometry, profile drag, motor and ESC efficiency, propeller mass, structural loads, noise, RPM limits, tip-speed effects, packaging, and frame clearance.
 
@@ -303,7 +301,8 @@ A larger rotor can reduce ideal induced power while still being impractical or i
 
 ## Part F — Inflow ratio and model limitations
 
-### F1. Relationship between lambda and C_T,U
+**F1.** Define lambda, derive the relationship between lambda and C_T,U, and show how this connects the tip-speed and induced-air-speed thrust formulas.
+
 
 Define the inflow ratio as
 
@@ -339,7 +338,7 @@ Therefore,
 
 This connects the blade-tip-speed description of thrust to the induced-air-speed actuator-disk description.
 
-### F2. Can the theory determine motor RPM?
+**F2.** Can dimensional analysis plus actuator-disk theory determine motor RPM? What additional information is needed?
 
 No. Dimensional analysis and ideal actuator-disk theory cannot determine the RPM required for hover by themselves.
 
@@ -351,7 +350,8 @@ Motor KV alone is not sufficient because KV represents approximately no-load spe
 
 ## Part G — Your quadcopter
 
-### G1. Design inputs and units
+**G1. Design inputs and units.** Give the all-up mass of your quadcopter (including battery and payload), planned commercial propeller diameter, and a comparison diameter. State whether the mass is measured or estimated, identify the propeller size/model if known, show the conversions to SI, and explain whether the comparison propeller would fit the frame.
+
 
 The estimated all-up mass of the quadcopter is
 
@@ -381,7 +381,7 @@ The common values are:
 
 `N = 4`
 
-### G2. Actuator-disk calculation
+**G2. Actuator-disk calculation.** Using the mass of your quadcopter and installed rotor diameter, show intermediate calculations for disk area `A`, hover thrust per rotor `T`, mass flow `m_dot`, induced velocity `vi`, far-wake velocity `vw`, pressure jump `Delta_p`, and ideal power per rotor `Pi`. Enter the selected outputs in `results.csv`.
 
 Hover thrust per rotor:
 
@@ -443,7 +443,7 @@ Total ideal induced hover power:
 
 `Ptot = 40.5293 W`
 
-### G3. Rotor diameter comparison
+**G3. Rotor diameter comparison.** Calculate total ideal induced hover power at your planned diameter and chosen comparison diameter at the *same total weight and rotor count*. Check your computed ratio against the diameter scaling law. What practical considerations might prevent choosing the larger rotor?
 
 For the 7-inch comparison rotor:
 
@@ -487,7 +487,7 @@ The ideal actuator-disk model therefore predicts that the 7-inch rotors require 
 
 However, a larger propeller requires more frame clearance and may require a different motor, RPM range, and structural design. It also has greater rotational inertia and may affect maneuverability. Therefore, the ideal power result alone does not prove that 7-inch props are the better practical choice.
 
-### G4. Connecting blade and air speeds
+**G4. Connecting blade and air speeds (conditional).** If you have a measured or documented estimate of the **loaded hover RPM**, give the source, convert it to `Omega` and `U_tip`, and calculate `lambda` and `C_T,U` in two ways. If this information is unavailable, leave the three RPM-dependent CSV entries blank and explain why actuator-disk theory cannot determine them by itself. Note that a motor's `KV` value is not a loaded hover-RPM measurement.
 
 A sufficiently reliable loaded hover RPM is not available for the exact motor-propeller operating condition used here. Therefore, the following `results.csv` entries are intentionally left blank:
 
