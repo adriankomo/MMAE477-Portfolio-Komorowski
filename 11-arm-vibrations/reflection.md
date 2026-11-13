@@ -1,6 +1,6 @@
 # Quadcopter arm vibrations — reflection
 
-**Name:** Adrian Komorowskik
+**Name:** Adrian Komorowski
 
 ## Part 1 — Geometry and approximate natural frequencies
 
